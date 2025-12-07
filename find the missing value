@@ -1,0 +1,7 @@
+num = [1,2,3,5,6]
+def find_missing(arr):
+    N = len(arr) + 1
+    total = N * (N + 1) // 2
+    return total - sum(arr)
+
+print(find_missing(num)) 
