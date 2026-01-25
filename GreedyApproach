@@ -1,0 +1,12 @@
+activities = [(1, 3), (2, 5), (4, 6), (6, 7), (5, 8),(7,8)]
+
+selected = []
+end_time = 0
+
+for i in activities:
+    if i[0] >= end_time:
+        selected.append(i)
+        end_time = i[1]
+
+print("Selected activities:", selected)
+print("Maximum number of activities =", len(selected))
