@@ -1,0 +1,11 @@
+weights = [2,3,4,1,5]
+capacity = 10
+weights.sort()
+total = 0
+selected = []
+for i in weights:
+    if total + i <= capacity:
+        selected.append(i)
+        total += i
+print("Selected item weights:", selected)
+print("Total items selected:", len(selected))
